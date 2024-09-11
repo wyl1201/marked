@@ -198,7 +198,7 @@ const inlineText =
   /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/
 
 // list of unicode punctuation marks, plus any missing characters from CommonMark spec
-const _punctuation = '[!"#$%&\'()*+,\-./:;<=>?@[\\\]^_`{|}~]'
+const _punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 const punctuation = edit(/^((?![*_])[\spunctuation])/, 'u')
   .replace(/punctuation/g, _punctuation)
   .getRegex()
