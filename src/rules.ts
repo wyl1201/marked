@@ -191,7 +191,7 @@ const blockPedantic: Record<BlockKeys, RegExp> = {
  * Inline-Level Grammar
  */
 
-const escape = /^((?![*_])[\s!"#$%&'()*+,\-./:;<=>?@[\\\]_`{|}~])/
+const escape = /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/
 const inlineCode = /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/
 const br = /^( {2,}|\\)\n(?!\s*$)/
 const inlineText =
